@@ -1,0 +1,44 @@
+VoteVision Privacy Policy
+Effective date: May 21, 2026
+
+VoteVision is a watch-party voting app for song contests. This policy explains what data the app uses, where that data stays, and what happens when you use local peer sync or export features. This policy applies to VoteVision by the developer listed on the app store listing.
+
+Data Stored On Your Device
+
+VoteVision stores app data locally on your device so it can remember your voting progress. This local data can include your generated app user ID, chosen display name, avatar icon, avatar color, scores, and score timestamps.
+
+Data Collection
+
+VoteVision does not send your personal data to a VoteVision server. VoteVision does not require an account, use analytics SDKs, use advertising SDKs, show ads, sell personal data, or use a central backend for your votes.
+
+Peer Sync And Export
+
+Peer sync is optional app functionality. When peer sync is available, VoteVision may share your chosen profile, votes, and temporary party alerts directly with other open VoteVision app instances in the same party session so group rankings, taste matching, and party alerts can work.
+
+On the web, peer sync uses the browser's BroadcastChannel feature between open VoteVision instances on the same site origin. On Android and iOS native builds, peer sync uses local-network UDP broadcast on the same Wi-Fi or local network. LAN sync is not end-to-end encrypted by VoteVision, so only use peer sync on networks and with party members you trust. VoteVision does not operate a central server for this data.
+
+If you use CSV export, the export is created locally in the app from the current group ranking data. You control what happens to that exported file or link after export.
+
+Permissions
+
+The Android app may request internet, network state, Wi-Fi state, and Wi-Fi multicast permissions so local network peer sync can work. VoteVision does not use these permissions to contact a VoteVision backend. The app does not request location, camera, microphone, contacts, SMS, phone, calendar, advertising ID, or broad file access permissions.
+
+Third-Party Services
+
+VoteVision is built with Expo and React Native libraries. The app itself does not include third-party analytics, advertising, or tracking SDKs. Platform providers such as Google Play, Apple, or your device operating system may process information under their own privacy policies when you install or update the app.
+
+Children
+
+VoteVision is not directed to children under 13. Do not enter personal information into the app if you are under 13 or if you do not have permission to use the app.
+
+Data Deletion
+
+VoteVision does not create app accounts. You can delete local VoteVision data by using the in-app reset option or by uninstalling the app. If peer sync has shared your party data with other devices, ask the people using those devices to reset or delete their local app data as well.
+
+Changes
+
+This policy may be updated when VoteVision changes.
+
+Contact
+
+For privacy questions, contact the developer using the support email shown on the store listing.
