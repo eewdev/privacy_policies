@@ -1,0 +1,11 @@
+# Privacy Policy
+
+Last updated: May 31, 2026
+
+Nudge is designed to keep routine data simple and local. Routines, tasks, color mood, and reminder timing are stored on the user's device with AsyncStorage.
+
+Android development and release builds may use Firebase Crashlytics to collect crash diagnostics such as device state, app version, and error details. These diagnostics help find stability issues and are not used for advertising.
+
+Nudge does not require an account, does not sell personal information, and does not upload routine content to an app server.
+
+For privacy questions, contact the app developer through the store listing or project repository.
