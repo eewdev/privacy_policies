@@ -1,15 +1,25 @@
 VoteVision Privacy Policy
-Effective date: May 21, 2026
+Effective date: November 26, 2026
 
-VoteVision is a watch-party voting app for song contests. This policy explains what data the app uses, where that data stays, and what happens when you use local peer sync or export features. This policy applies to VoteVision by the developer listed on the app store listing.
+VoteVision is a watch-party voting app for song contests. This policy explains what data the app uses, where that data stays, and what happens when you use local peer sync, export, or optional crash reports. This policy applies to VoteVision by the developer listed on the app store listing.
 
 Data Stored On Your Device
 
-VoteVision stores app data locally on your device so it can remember your voting progress. This local data can include your generated app user ID, chosen display name, avatar icon, avatar color, scores, and score timestamps.
+VoteVision stores app data locally on your device so it can remember your voting progress. This local data can include your generated app user ID, chosen display name, avatar icon, avatar color, scores, score timestamps, and your app settings (for example whether you have seen the intro and whether crash reports are turned on).
 
 Data Collection
 
-VoteVision does not send your personal data to a VoteVision server. VoteVision does not require an account, use analytics SDKs, use advertising SDKs, show ads, sell personal data, or use a central backend for your votes.
+VoteVision does not send your votes, names, or profile to a VoteVision server. VoteVision does not require an account, use analytics SDKs, use advertising SDKs, show ads, sell personal data, or use a central backend for your votes.
+
+The only data that can leave your device to a service provider are optional crash reports, described below. They are turned off until you switch them on.
+
+Optional Crash Reports
+
+On Android, you can choose to send crash reports in the intro or later in the Sync screen. This is off by default. If you turn it on, and the app crashes or hits a serious error, VoteVision sends a technical report through Firebase Crashlytics, a service provided by Google.
+
+A crash report contains technical information only: the error and where in the code it happened, the app version, the device model, the operating system version, the time of the crash, and a random installation identifier created by Crashlytics. It does not contain your votes, display name, avatar, or party members. Crash reports are used only to find and fix bugs and are kept by Crashlytics for 90 days.
+
+Google processes this data under the Firebase terms and Google's privacy policy (https://policies.google.com/privacy). You can turn crash reports off at any time in the Sync screen; no further reports are sent after that.
 
 Peer Sync And Export
 
@@ -17,15 +27,15 @@ Peer sync is optional app functionality. When peer sync is available, VoteVision
 
 On the web, peer sync uses the browser's BroadcastChannel feature between open VoteVision instances on the same site origin. On Android and iOS native builds, peer sync uses local-network UDP broadcast on the same Wi-Fi or local network. LAN sync is not end-to-end encrypted by VoteVision, so only use peer sync on networks and with party members you trust. VoteVision does not operate a central server for this data.
 
-If you use CSV export, the export is created locally in the app from the current group ranking data. You control what happens to that exported file or link after export.
+If you use CSV export, the export is created locally in the app from the current group ranking data. You control what happens to the exported file after export.
 
 Permissions
 
-The Android app may request internet, network state, Wi-Fi state, and Wi-Fi multicast permissions so local network peer sync can work. VoteVision does not use these permissions to contact a VoteVision backend. The app does not request location, camera, microphone, contacts, SMS, phone, calendar, advertising ID, or broad file access permissions.
+The Android app may request internet, network state, Wi-Fi state, and Wi-Fi multicast permissions so local network peer sync can work and, if you turned them on, crash reports can be sent. VoteVision does not use these permissions to contact a VoteVision backend. The app does not request location, camera, microphone, contacts, SMS, phone, calendar, advertising ID, or broad file access permissions.
 
 Third-Party Services
 
-VoteVision is built with Expo and React Native libraries. The app itself does not include third-party analytics, advertising, or tracking SDKs. Platform providers such as Google Play, Apple, or your device operating system may process information under their own privacy policies when you install or update the app.
+VoteVision is built with Expo and React Native libraries. The only third-party service the app can send data to is Firebase Crashlytics for optional crash reports. The app does not include analytics, advertising, or tracking SDKs. The rating button opens the Google Play Store, which is covered by Google's own privacy policy. Platform providers such as Google Play, Apple, or your device operating system may also process information under their own privacy policies when you install or update the app.
 
 Children
 
@@ -33,7 +43,7 @@ VoteVision is not directed to children under 13. Do not enter personal informati
 
 Data Deletion
 
-VoteVision does not create app accounts. You can delete local VoteVision data by using the in-app reset option or by uninstalling the app. If peer sync has shared your party data with other devices, ask the people using those devices to reset or delete their local app data as well.
+VoteVision does not create app accounts. You can delete local VoteVision data by using the in-app reset option or by uninstalling the app. If peer sync has shared your party data with other devices, ask the people using those devices to reset or delete their local app data as well. Crash reports that were already sent are deleted automatically by Crashlytics after 90 days.
 
 Changes
 
