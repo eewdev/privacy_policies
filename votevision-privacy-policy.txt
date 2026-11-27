@@ -1,54 +1,165 @@
 VoteVision Privacy Policy
-Effective date: November 26, 2026
+Effective date: November 27, 2026
 
-VoteVision is a watch-party voting app for song contests. This policy explains what data the app uses, where that data stays, and what happens when you use local peer sync, export, or optional crash reports. This policy applies to VoteVision by the developer listed on the app store listing.
+In short: VoteVision does not send any data to the developer or to any other service. Your votes, names and party data stay on your devices. There is no account, no server, no ads, no analytics and no crash reporting.
 
-Data Stored On Your Device
+Deutsche Fassung weiter unten.
 
-VoteVision stores app data locally on your device so it can remember your voting progress. This local data can include your generated app user ID, chosen display name, avatar icon, avatar color, scores, score timestamps, and your app settings (for example whether you have seen the intro and whether crash reports are turned on).
 
-Data Collection
+1. About this policy
 
-VoteVision does not send your votes, names, or profile to a VoteVision server. VoteVision does not require an account, use analytics SDKs, use advertising SDKs, show ads, sell personal data, or use a central backend for your votes.
+This policy applies to the Android app VoteVision (package com.eew.votevision), published on Google Play by eewdev. For questions, email development.eew@gmail.com.
 
-The only data that can leave your device to a service provider are optional crash reports, described below. They are turned off until you switch them on.
 
-Optional Crash Reports
+2. Data stored only on your device
 
-On Android, you can choose to send crash reports in the intro or later in the Sync screen. This is off by default. If you turn it on, and the app crashes or hits a serious error, VoteVision sends a technical report through Firebase Crashlytics, a service provided by Google.
+VoteVision stores the following on your device so it can remember your progress:
 
-A crash report contains technical information only: the error and where in the code it happened, the app version, the device model, the operating system version, the time of the crash, and a random installation identifier created by Crashlytics. It does not contain your votes, display name, avatar, or party members. Crash reports are used only to find and fix bugs and are kept by Crashlytics for 90 days.
+- Your profile: a random app user ID created on first start, the display name you choose, your avatar icon and avatar color.
+- Your votes: your scores per act and when you last changed them.
+- Party data: the profiles and votes of party members your app has received through peer sync (section 3), and which members were removed.
+- Settings: whether you have seen the intro and whether you were asked for a rating.
 
-Google processes this data under the Firebase terms and Google's privacy policy (https://policies.google.com/privacy). You can turn crash reports off at any time in the Sync screen; no further reports are sent after that.
+This data never leaves your device except through peer sync (section 3) or an export you start yourself (section 4). The developer does not receive it and cannot see it.
 
-Peer Sync And Export
 
-Peer sync is optional app functionality. When peer sync is available, VoteVision may share your chosen profile, votes, and temporary party alerts directly with other open VoteVision app instances in the same party session so group rankings, taste matching, and party alerts can work.
+3. Peer sync with other devices on your network
 
-On the web, peer sync uses the browser's BroadcastChannel feature between open VoteVision instances on the same site origin. On Android and iOS native builds, peer sync uses local-network UDP broadcast on the same Wi-Fi or local network. LAN sync is not end-to-end encrypted by VoteVision, so only use peer sync on networks and with party members you trust. VoteVision does not operate a central server for this data.
+When several people open VoteVision on the same Wi-Fi or local network, the apps find each other and exchange data directly, so group rankings, taste matching and party alerts work. For this, your app sends your profile (user ID, display name, avatar icon and color), your votes and the party alerts you trigger as UDP broadcast messages to the local network, and receives the same data from the other apps.
 
-If you use CSV export, the export is created locally in the app from the current group ranking data. You control what happens to the exported file after export.
+- There is no VoteVision server in between. The data goes only to devices on the same local network.
+- Every device on that network can technically receive these messages, not only other VoteVision users. The messages are not encrypted. Only use peer sync on networks and with people you trust, and do not use your full real name as display name if that matters to you.
+- You decide what to share by choosing your display name and avatar. If you do not want to share anything, use VoteVision without connecting to a shared network.
+- The developer does not receive this data.
 
-Permissions
 
-The Android app may request internet, network state, Wi-Fi state, and Wi-Fi multicast permissions so local network peer sync can work and, if you turned them on, crash reports can be sent. VoteVision does not use these permissions to contact a VoteVision backend. The app does not request location, camera, microphone, contacts, SMS, phone, calendar, advertising ID, or broad file access permissions.
+4. Rating button and CSV export
 
-Third-Party Services
+- "Rate VoteVision" opens the VoteVision page in the Google Play Store. What happens there is covered by Google's privacy policy (https://policies.google.com/privacy). VoteVision itself sends nothing when you tap it.
+- "Export CSV" creates a table of the group ranking (acts, average scores and number of votes, no names) on your device and opens the Android share dialog. You decide where to send it.
 
-VoteVision is built with Expo and React Native libraries. The only third-party service the app can send data to is Firebase Crashlytics for optional crash reports. The app does not include analytics, advertising, or tracking SDKs. The rating button opens the Google Play Store, which is covered by Google's own privacy policy. Platform providers such as Google Play, Apple, or your device operating system may also process information under their own privacy policies when you install or update the app.
 
-Children
+5. Permissions
 
-VoteVision is not directed to children under 13. Do not enter personal information into the app if you are under 13 or if you do not have permission to use the app.
+The app uses these Android permissions, only for peer sync on your local network:
+- Internet and network state
+- Wi-Fi state and Wi-Fi multicast
 
-Data Deletion
+The app does not request location, camera, microphone, contacts, phone, SMS, calendar, storage or advertising ID access.
 
-VoteVision does not create app accounts. You can delete local VoteVision data by using the in-app reset option or by uninstalling the app. If peer sync has shared your party data with other devices, ask the people using those devices to reset or delete their local app data as well. Crash reports that were already sent are deleted automatically by Crashlytics after 90 days.
 
-Changes
+6. What VoteVision does not do
 
-This policy may be updated when VoteVision changes.
+No account, no server, no analytics, no advertising, no tracking, no crash reporting, no sale or sharing of personal data.
 
-Contact
+Google Play and Android may process data when you download, install or update the app. This is covered by Google's privacy policy and is outside the developer's control.
 
-For privacy questions, contact the developer using the support email shown on the store listing.
+
+7. Earlier versions
+
+VoteVision 1.0.3 and earlier offered optional crash reports through Firebase Crashlytics (Google). They were off by default and only sent if you turned them on. This feature was removed in version 1.0.4. Reports sent before that are deleted automatically by Google after 90 days.
+
+
+8. Children
+
+VoteVision is not directed at children.
+
+
+9. Deleting your data
+
+- On your device: use "Reset app" in the Sync screen, or uninstall the app. This deletes your profile, votes and party data.
+- On other devices: data shared through peer sync is stored on the other party members' devices. Ask them to remove you (inactive members can be removed in the app) or to reset their app.
+
+
+10. Your rights
+
+If you live in the EU, you have rights under the GDPR, including access, rectification, erasure, and the right to lodge a complaint with a data protection supervisory authority. Because the developer does not receive any of your data, you can exercise these rights directly in the app (edit your profile, reset the app). For questions, email development.eew@gmail.com.
+
+
+11. Changes
+
+This policy is updated when VoteVision changes. The current version is always available at https://github.com/eewdev/privacy_policies/blob/main/votevision-privacy-policy.txt and in the app (Sync screen > Privacy Policy).
+
+
+================================================================
+
+
+Datenschutzerklärung VoteVision
+Stand: 27. November 2026
+
+Kurz gesagt: VoteVision sendet keine Daten an den Entwickler oder an andere Dienste. Deine Punkte, Namen und Party-Daten bleiben auf euren Geräten. Es gibt kein Konto, keinen Server, keine Werbung, keine Analyse-Tools und keine Absturzberichte.
+
+
+1. Zu dieser Erklärung
+
+Diese Erklärung gilt für die Android-App VoteVision (Paket com.eew.votevision), veröffentlicht bei Google Play von eewdev. Bei Fragen: development.eew@gmail.com.
+
+
+2. Daten, die nur auf deinem Gerät gespeichert werden
+
+VoteVision speichert auf deinem Gerät, damit dein Fortschritt erhalten bleibt:
+
+- Dein Profil: eine zufällige App-Nutzer-ID, die beim ersten Start erzeugt wird, der von dir gewählte Anzeigename, dein Avatar-Symbol und deine Avatar-Farbe.
+- Deine Bewertungen: deine Punkte pro Act und wann du sie zuletzt geändert hast.
+- Party-Daten: Profile und Bewertungen von Party-Mitgliedern, die deine App per Peer-Sync (Abschnitt 3) empfangen hat, und welche Mitglieder entfernt wurden.
+- Einstellungen: ob du die Einführung gesehen hast und ob du um eine Bewertung gebeten wurdest.
+
+Diese Daten verlassen dein Gerät nur über Peer-Sync (Abschnitt 3) oder einen Export, den du selbst startest (Abschnitt 4). Der Entwickler erhält sie nicht und kann sie nicht einsehen.
+
+
+3. Peer-Sync mit anderen Geräten in deinem Netzwerk
+
+Wenn mehrere Personen VoteVision im selben WLAN oder lokalen Netzwerk öffnen, finden sich die Apps und tauschen Daten direkt aus, damit Gruppenranking, Geschmacksvergleich und Party-Alarme funktionieren. Dafür sendet deine App dein Profil (Nutzer-ID, Anzeigename, Avatar-Symbol und -Farbe), deine Bewertungen und die von dir ausgelösten Party-Alarme als UDP-Broadcast in das lokale Netzwerk und empfängt dieselben Daten von den anderen Apps.
+
+- Es gibt keinen VoteVision-Server dazwischen. Die Daten gehen nur an Geräte im selben lokalen Netzwerk.
+- Jedes Gerät in diesem Netzwerk kann diese Nachrichten technisch empfangen, nicht nur andere VoteVision-Nutzer. Die Nachrichten sind nicht verschlüsselt. Nutze Peer-Sync nur in Netzwerken und mit Personen, denen du vertraust, und verwende nicht deinen vollständigen echten Namen als Anzeigenamen, wenn dir das wichtig ist.
+- Was du teilst, bestimmst du über Anzeigenamen und Avatar. Wenn du nichts teilen möchtest, nutze VoteVision ohne gemeinsames Netzwerk.
+- Der Entwickler erhält diese Daten nicht.
+
+
+4. Bewerten-Button und CSV-Export
+
+- „Rate VoteVision" öffnet die VoteVision-Seite im Google Play Store. Dort gilt die Datenschutzerklärung von Google (https://policies.google.com/privacy). VoteVision selbst sendet beim Tippen nichts.
+- „Export CSV" erstellt auf deinem Gerät eine Tabelle des Gruppenrankings (Acts, Durchschnittspunkte und Anzahl der Stimmen, keine Namen) und öffnet das Android-Teilen-Menü. Du entscheidest, wohin du sie schickst.
+
+
+5. Berechtigungen
+
+Die App nutzt diese Android-Berechtigungen, nur für Peer-Sync im lokalen Netzwerk:
+- Internet und Netzwerkstatus
+- WLAN-Status und WLAN-Multicast
+
+Die App fragt keinen Zugriff auf Standort, Kamera, Mikrofon, Kontakte, Telefon, SMS, Kalender, Speicher oder Werbe-ID an.
+
+
+6. Was VoteVision nicht tut
+
+Kein Konto, kein Server, keine Analyse-Tools, keine Werbung, kein Tracking, keine Absturzberichte, kein Verkauf oder Weitergabe personenbezogener Daten.
+
+Google Play und Android können beim Herunterladen, Installieren oder Aktualisieren der App Daten verarbeiten. Dafür gilt die Datenschutzerklärung von Google; der Entwickler hat darauf keinen Einfluss.
+
+
+7. Frühere Versionen
+
+VoteVision 1.0.3 und älter boten optionale Absturzberichte über Firebase Crashlytics (Google) an. Sie waren standardmäßig ausgeschaltet und wurden nur gesendet, wenn du sie eingeschaltet hattest. Diese Funktion wurde mit Version 1.0.4 entfernt. Bereits gesendete Berichte löscht Google nach 90 Tagen automatisch.
+
+
+8. Kinder
+
+VoteVision richtet sich nicht an Kinder.
+
+
+9. Daten löschen
+
+- Auf deinem Gerät: „Reset app" im Sync-Bildschirm nutzen oder die App deinstallieren. Dadurch werden Profil, Bewertungen und Party-Daten gelöscht.
+- Auf anderen Geräten: Per Peer-Sync geteilte Daten liegen auf den Geräten der anderen Party-Mitglieder. Bitte sie, dich zu entfernen (inaktive Mitglieder lassen sich in der App entfernen) oder ihre App zurückzusetzen.
+
+
+10. Deine Rechte
+
+Wenn du in der EU lebst, hast du Rechte nach der DSGVO, unter anderem auf Auskunft, Berichtigung, Löschung und Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Da der Entwickler keine deiner Daten erhält, kannst du diese Rechte direkt in der App wahrnehmen (Profil bearbeiten, App zurücksetzen). Bei Fragen: development.eew@gmail.com.
+
+
+11. Änderungen
+
+Diese Erklärung wird aktualisiert, wenn sich VoteVision ändert. Die aktuelle Fassung ist immer unter https://github.com/eewdev/privacy_policies/blob/main/votevision-privacy-policy.txt und in der App (Sync-Bildschirm > Privacy Policy) abrufbar.
